@@ -171,9 +171,11 @@ foreach ($estudiantes as $e) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Clear+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="page-resultados px-4 py-12">
+<body class="page-resultados page-body px-4 py-12">
+<?php include __DIR__ . '/components/header.php'; ?>
 
 <div class="max-w-5xl mx-auto page-enter">
 

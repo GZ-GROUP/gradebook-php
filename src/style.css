@@ -35,6 +35,121 @@ body.page-resultados {
         radial-gradient(ellipse at 90% 90%, rgba(37,99,235,.20) 0%, transparent 50%);
 }
 
+.page-body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+.navbar-component,
+.footer-component {
+    width: 100%;
+    max-width: 1100px;
+}
+
+.navbar-inner,
+.footer-component {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 1rem;
+    padding: 1rem 1.25rem;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+.navbar-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: .85rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-brand-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--cyan), var(--blue));
+    color: #0f172a;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.navbar-brand-image {
+    display: block;
+    width: 2.75rem;
+    height: auto;
+}
+
+.navbar-brand-text strong {
+    font-size: 1rem;
+    display: block;
+}
+
+.navbar-brand-text small {
+    display: block;
+    color: rgba(255,255,255,.75);
+    font-size: .78rem;
+}
+
+.navbar-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.navbar-links a {
+    color: rgba(255,255,255,.80);
+    text-decoration: none;
+    font-size: .95rem;
+    transition: color .2s ease;
+}
+
+.navbar-links a:hover {
+    color: #fff;
+}
+
+.footer-component {
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+}
+
+.footer-copy {
+    color: rgba(255,255,255,.75);
+    font-size: .9rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-links a {
+    color: rgba(255,255,255,.75);
+    transition: color .2s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-icon {
+    width: 24px;
+    height: 24px;
+}
+
 /* ── Tarjeta de cristal ─────────────────────────────────── */
 .glass {
     background: rgba(255,255,255,.04);
